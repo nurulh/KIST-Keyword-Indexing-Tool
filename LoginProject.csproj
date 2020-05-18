@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBBF4C36-57B7-4244-805C-4EBE8674FB6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LoginProject</RootNamespace>
+    <AssemblyName>LoginProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssaultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssaultForm.Designer.cs">
+      <DependentUpon>AssaultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assaultUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assaultUpdate.Designer.cs">
+      <DependentUpon>assaultUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicInformation.Designer.cs">
+      <DependentUpon>BasicInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BribeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BribeForm.Designer.cs">
+      <DependentUpon>BribeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bribeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bribeUpdate.Designer.cs">
+      <DependentUpon>bribeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connct.cs" />
+    <Compile Include="CreateCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCase.Designer.cs">
+      <DependentUpon>CreateCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUpdate.Designer.cs">
+      <DependentUpon>CUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CybercrimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CybercrimeForm.Designer.cs">
+      <DependentUpon>CybercrimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrugForm.Designer.cs">
+      <DependentUpon>DrugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvidenceProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvidenceProcess.Designer.cs">
+      <DependentUpon>EvidenceProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpsswd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpsswd.Designer.cs">
+      <DependentUpon>forgotpsswd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fraud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fraud.Designer.cs">
+      <DependentUpon>Fraud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Harassment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Harassment.Designer.cs">
+      <DependentUpon>Harassment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashCode.cs" />
+    <Compile Include="Hate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hate.Designer.cs">
+      <DependentUpon>Hate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IndexFile.Designer.cs">
+      <DependentUpon>IndexFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUpdate.Designer.cs">
+      <DependentUpon>MUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MurderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MurderForm.Designer.cs">
+      <DependentUpon>MurderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mysqlcsharpDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mysqlcsharpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewCase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewCase.Designer.cs">
+      <DependentUpon>NewCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PdUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdUpdate.Designer.cs">
+      <DependentUpon>PdUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedophileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedophileForm.Designer.cs">
+      <DependentUpon>PedophileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PornForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PornForm.Designer.cs">
+      <DependentUpon>PornForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RapeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RapeForm.Designer.cs">
+      <DependentUpon>RapeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rapeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rapeUpdate.Designer.cs">
+      <DependentUpon>rapeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecentCase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecentCase.Designer.cs">
+      <DependentUpon>RecentCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RUpdate.Designer.cs">
+      <DependentUpon>RUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trafficking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trafficking.Designer.cs">
+      <DependentUpon>Trafficking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFraud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFraud.Designer.cs">
+      <DependentUpon>UpdateFraud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHarass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateHarass.Designer.cs">
+      <DependentUpon>UpdateHarass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateHate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateHate.Designer.cs">
+      <DependentUpon>UpdateHate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePorn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePorn.Designer.cs">
+      <DependentUpon>UpdatePorn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTrafficking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTrafficking.Designer.cs">
+      <DependentUpon>UpdateTrafficking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManual.Designer.cs">
+      <DependentUpon>UserManual.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssaultForm.resx">
+      <DependentUpon>AssaultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assaultUpdate.resx">
+      <DependentUpon>assaultUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicInformation.resx">
+      <DependentUpon>BasicInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BribeForm.resx">
+      <DependentUpon>BribeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bribeUpdate.resx">
+      <DependentUpon>bribeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUpdate.resx">
+      <DependentUpon>CUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CybercrimeForm.resx">
+      <DependentUpon>CybercrimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugForm.resx">
+      <DependentUpon>DrugForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvidenceProcess.resx">
+      <DependentUpon>EvidenceProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpsswd.resx">
+      <DependentUpon>forgotpsswd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fraud.resx">
+      <DependentUpon>Fraud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Harassment.resx">
+      <DependentUpon>Harassment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hate.resx">
+      <DependentUpon>Hate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndexFile.resx">
+      <DependentUpon>IndexFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUpdate.resx">
+      <DependentUpon>MUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MurderForm.resx">
+      <DependentUpon>MurderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCase.resx">
+      <DependentUpon>NewCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdUpdate.resx">
+      <DependentUpon>PdUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedophileForm.resx">
+      <DependentUpon>PedophileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PornForm.resx">
+      <DependentUpon>PornForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RapeForm.resx">
+      <DependentUpon>RapeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rapeUpdate.resx">
+      <DependentUpon>rapeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecentCase.resx">
+      <DependentUpon>RecentCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RUpdate.resx">
+      <DependentUpon>RUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trafficking.resx">
+      <DependentUpon>Trafficking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFraud.resx">
+      <DependentUpon>UpdateFraud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHarass.resx">
+      <DependentUpon>UpdateHarass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHate.resx">
+      <DependentUpon>UpdateHate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePorn.resx">
+      <DependentUpon>UpdatePorn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTrafficking.resx">
+      <DependentUpon>UpdateTrafficking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManual.resx">
+      <DependentUpon>UserManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="mysqlcsharpDataSet.xsc">
+      <DependentUpon>mysqlcsharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mysqlcsharpDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mysqlcsharpDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mysqlcsharpDataSet.xss">
+      <DependentUpon>mysqlcsharpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\DrugForm.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-things-31-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danrabbit-Elementary-Window-new %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new icon 48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo uthm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Keyword text file\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO PSM.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
